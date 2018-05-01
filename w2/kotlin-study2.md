@@ -64,7 +64,7 @@ if (a > 0) {  // もしもこの条件式に合っていればこの中身を実
 <div style="page-break-before:always"></div>
 
 ## when式(条件つき)
-if式のようにいちいちif〜else if〜elseと書かなくても良いのですっきりした文になってとても見やすい
+if式のようにいちいちif〜else if〜elseと書かなくても良いのですっきりした文になってとても見やすい
 ```kotlin
 val a = 1
 
@@ -81,7 +81,7 @@ val a = 1
 
 when (a) {
   0 -> println("aは0です")
-  1 -> println("aは1です")
+  1 -> println("aは1です")
   in 2..5 -> println("aは2から5の間のどれかです")
   else -> println("どの条件にも満たしていません")
 }

@@ -57,7 +57,8 @@ for (int i = 0; i <= 5; i++) {
 
 <div style="page-break-before:always"></div>
 ---
-### forの中にforをかける(多重ループ)
+
+### forの中にforをかける(多重ループ)
 ```kotlin
 for (i in 1..5) {
   for (j in 1..5) {
@@ -174,6 +175,7 @@ for (i in 1..5) {
 
 <div style="page-break-before:always"></div>
 ---
+
 ## while文
 for式と同じく、繰り返し処理を行いたいときに使います。  
 for式と異なる点はループの終了条件にあります。

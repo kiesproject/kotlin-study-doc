@@ -174,6 +174,7 @@ for (i in 1..5) {
 
 <div style="page-break-before:always"></div>
 ---
+
 ## while文
 for式と同じく、繰り返し処理を行いたいときに使います。  
 for式と異なる点はループの終了条件にあります。

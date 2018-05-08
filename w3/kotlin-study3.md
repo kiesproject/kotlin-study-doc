@@ -56,7 +56,9 @@ for (int i = 0; i <= 5; i++) {
 - for式を使用して`*`を横に10個表示してみよう
 
 <div style="page-break-before:always"></div>
+
 ---
+
 ### forの中にforをかける(多重ループ)
 ```kotlin
 for (i in 1..5) {

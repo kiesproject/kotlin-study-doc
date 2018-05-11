@@ -161,8 +161,40 @@ list.fold("first: ") { s1, s2 -> s1 + s2 }
 
 - filter関数を使用して0〜32の連番が格納されたListに対して4の倍数だけ取り出された結果を表示してみよう
 
+### 追加もんだい
+
+- 以下のデータを2の倍数のみの`List<Int>`型のデータに直して出力してみよう
+
+  ```kotlin
+  val listInList: List<List<Int>> = listOf(listOf(1, 2, 3), listof(4, 5, 6), listOf(7, 8, 9, 10))
+  ```
+
+  - 出力例
+
+    ```kotlin
+    2
+    4
+    6
+    8
+    10
+    ```
+
+  - ヒント
+
+    - flatMapとfilterを使用します
+    - flatMap内ではlistを逐次処理する流れになってます
+      - ```kotlin
+        val listOfList: List<List<Int>> = listOf(listOf(1, 2, 3), listOf(4, 5, 6))
+        val flatList: List<Int> = listOfList.flatMap { list -> list }  // ここで各Listを操作
+        ```
+    - filterの返り値は`List<T>`(Tは任意の型)です
+
+- 上の問題を解いたプログラムをベースに各Listを3倍させたものを、2の倍数のみの`List<Int>`型のデータになるようフィルター処理して出力してみよう
+
 ## 次回
 
 - kotlinコレクション続き
+
   - ミュータブル、イミュータブル
+
 - Nullとは？(できたら)
